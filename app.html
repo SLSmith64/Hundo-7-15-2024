@@ -45,7 +45,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="/img/(Looka Blue)Initials and Logo.png" width="30" class="d-inline-block align-text-top">
-                Hundo: Coding Challenge using loops
+                    Hundo: Coding Challenge using loops
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link"  href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="app.html">The App</a>
@@ -76,15 +76,18 @@
     <main>
         <div class="container mt-5">
             <h1>Hundo: a coding Challenge</h1>
-            <div class="mb-4">Live life one loop at a time. A javascript coding challenge that displays the numbers from 0 to 100. Displays the even numbers in <strong>Bold.</strong></div>
+            <div class="mb-4">Live life one loop at a time. A javascript coding challenge that displays the numbers from
+                0 to 100. Displays the even numbers in <strong>Bold.</strong></div>
 
             <h2 class="border-bottom border-2 mb-3">Instructions</h2>
 
             <div class="row">
+                <!--Start Value-->
                 <div class="col">
                     <label class="form-label" for="startValue">Starting Value:</label>
-                    <input id="startValue"type="number" class="form-control">
+                    <input id="startValue" type="number" class="form-control" value="0">
                 </div>
+                <!--End Value-->
                 <div class="col">
                     <label class="form-label" for="endValue">Ending Value:</label>
                     <input id="endValue" type="number" class="form-control" value="100">
@@ -92,15 +95,19 @@
                 <div class="col-12 text-end">
                     <button type="button" id="btnSubmit" class="btn btn-primary">Display</button>
                 </div>
-            </div>     
-            <div class="row gy-3 mt-3" id="resultsDisplay">
-                <div class="col-12">
-                    <h2 class="border-bottom border-2">Results</h2>
+
+                <div class="row gy-3 mt-3" id="resultsDisplay">
+                    <div class="col-12">
+                        <h2 class="border-bottom border-2">Results</h2>
+                    </div>
+                    <div class="col">
+                        <div class="row row-cols-2 row-cols-md-5" id="resultsData">
+                            <!-- Results go here-->
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="col" id="resultsData">
-                    <!-- Results go here-->
-                </div>
-            </div>  
+            </div>
     </main>
     <footer class="py-3">
         <div class="container-fluid">
@@ -124,13 +131,13 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!--Custom JS-->
     <script src="/js/site.js"></script>
 
     <script>
-        document.getElementById("btnSubmit").addEventListener("click", getValues2);
+        document.getElementById("btnSubmit").addEventListener("click", getValues);
     </script>
 
 </body>
